@@ -1,0 +1,38 @@
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+}
+
+.container{
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgb(12, 10, 83);
+  border-radius: 50px;
+}
+
+.container h2{
+  margin: 0;
+  color: white;
+}
+
+.container h1{
+  margin: 40px 0;
+  color: white;
+}
+
+.container h3{
+  margin: 10px 0;
+  color: white;
+}
+
+.container h3{
+  margin: 10px 0;
+  color: white;
+}

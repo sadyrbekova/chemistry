@@ -1,0 +1,271 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 200px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 52px;
+  margin-bottom: 80px;
+}
+
+
+p {
+  margin: 10px 0;
+}
+
+
+address {
+  font-style: italic;
+  font-size: 12px;
+  color: #888;
+}
+
+body{
+  background: #ffffff;
+}
+
+.zhanat{
+  position:absolute;
+  margin-left: 10px;
+  margin-top: -55px;
+}
+
+.zhanat img{
+  width: 500px;
+  position: relative;
+  bottom: 150px;
+  left: -50px;
+  
+}
+
+
+.right-half{
+  position: absolute;
+  width: 50%;
+  top: 260px;
+  right: 100px;   
+  float: right;
+}
+
+.right-half p{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.mw-file-description{
+  margin-top: 300PX;
+  font-size: 20px;
+  float: left;
+}
+
+
+.babl{
+  margin-top: 400px;
+  width: 50%;
+  position: absolute;
+  right: 100px;
+
+  text-align: right;
+}
+
+.file-formula{
+  margin-top: 500px;
+  width: 50%;
+  position: absolute;
+  right: 100px;
+
+  text-align: right;
+  
+}
+
+.file-elements{
+  margin-top: 500px;
+  font-size: 20px;
+  float: left;
+
+}
+
+.top-top{
+  margin-bottom: 500px;
+  width: 50%;
+  position: absolute;
+  left: 100px;
+  float: left;
+  text-align: left;
+} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swamp');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins';
+    min-height:100vh;
+   
+
+}
+
+
+.parallax{
+    background:url('/images/chemistry.jpg');
+    background-position:fixed;
+    height: 500px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    color: #ffffff;
+    /* padding: 10% 0; */
+}
+.parallax h1{
+    color:#ffffff;
+    font-size:70px;
+}
+.parallax .mask{
+    position:absolute;
+    top:0;
+    left:0;
+    height:500px;
+    width:1500px;
+    z-index:2;
+}
+.paralax-content{
+    z-index:4;
+}
+.page-content{
+    height:500px;
+}
+
+.page-content h2{
+    text-align:center;
+    font-size: 40px;
+    margin:60px 100px;
+
+}
+.page-content p{
+    font-size:30px;
+    color:black;
+}
+table{
+    font-family: sans-serif;
+    text-align:center;
+    border-collapse: separate;
+    border-spacing: 8px;
+    text-align: justify;
+    background:#ece9e0;
+    color:#656665;
+    margin: 0 auto;
+    border:16px solid #ece9e0;
+    border-radius: 16px;
+}
+th{
+    font-size:18px;
+    padding:10px;
+}
+td{
+    background:#f5d7bf;
+    padding:10px;
+
+}
+.page-content h1{
+    padding:50px;
+    text-align:center;
+}
+.alkan-container{
+    text-align:center;
+    padding:10px;
+}
+.alkan-container p{
+    font-size:30px;
+}
+.chemistry-container h1{
+    text-align:center;
+    
+}
+.chemistry-container p{
+    font-size:30px;
+}
+.chemistry-container h2{
+    font-size:30px;
+    text-align:center;
+}
+.begai-container{
+    text-align:center;
+    padding:10px;
+}
+.image-container{
+    width:600px;
+    height:300px;
+    background-image: url('/images/ema.png');
+    background-position: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-top:10px;
+}
+
+.galogenirovane-container h1{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h2{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h3{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h4{
+    text-align:center;
+    font-size:30px;
+    margin-top:10px;
+}
+.dega-container{
+    width: 300px;;
+    height:300px;
+    background-image: url('/images/download.jpg');
+    background-position: center;
+    margin-left: 500px;
+    font-size:100px;
+    
+    /* width:150%;
+    height:150%; */
+}
+.ras-container{
+    width:600px;
+    height:300px;
+    background-image: url('/images/download.png');
+    background-position: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-top:10px;
+}
+.mom-container{
+    width:500px;
+    height:100px;
+    background-image: url('/images/images.png');
+    background-position: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-top:10px;
+}
+.rec-container h1{
+    text-align:center;
+}

@@ -1,0 +1,488 @@
+/* начало панель управление */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+
+}
+body{
+  background-size: cover;
+  background-position:center ;
+  background-color: #a30101;
+}
+/* element.style {
+  position: fixed;
+} */
+.menu_bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  box-shadow: 0 5px 10px #000;
+  z-index: 10000;
+}
+.menu_bar .logo{
+  font-size:20px ;
+  font-weight: 900;
+  color: #000;
+  transition: .5s; 
+}
+.menu_bar .logo:hover{
+  transform: scale(1.2);
+}
+
+nav ul, .panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  z-index: 100000;
+}
+
+nav li, .panel li {
+  margin-right: 25px; /*отступы между элементами*/
+  position: relative;
+  z-index: 10000;
+}
+
+.menu_bar .logo{
+  font-size:20px ;
+  font-weight: 900;
+  color: #000;
+  transform: .5s;
+}
+.menu_bar .logo:hover{
+  transform: scale(1.2);
+}
+.panel {
+  display: flex;
+  align-items: center;
+}
+.menu_bar .panel ul li a{
+  padding: 15px;
+  color: #000;
+  font-size: 16px;
+  display: block;
+  z-index: 1000;
+  position: relative;
+}
+.menu_bar .panel ul li a:hover{
+  background: #000;
+  color: #fff !important;
+}
+
+
+
+/* .panel ul li:hover ul{
+  opacity: 1;
+} */
+
+.panel ul .education:hover ul{
+  opacity: 1;
+}
+
+.panel ul li ul{
+  position: absolute;
+  left: 0;
+  width: 180px;
+  flex-direction: column;
+  opacity: 0;
+}
+.panel ul li ul li{
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: #fff;
+}
+.panel ul li ul ul{
+  position: absolute;
+  left: 180px;
+  top: 50px;
+  display: none;
+}
+
+.nested-child {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  left: 180px;
+  display: none;
+}
+
+.nested-child:hover {
+  opacity: 1;
+  display: block;
+}
+
+.elements:hover ~ .nested-child{
+  display: block;
+  opacity: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn{
+  display: inline-block;
+  margin-top:1rem ;
+  border-radius: 5rem;
+  background: #959595;
+  color: white;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+.btn:hover{
+  background: rgb(44, 44, 44);
+
+}
+.obuchenie{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background:url(/images/IMG_7268.MP4) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  padding: 2rem 9%;
+}
+.obuchenie .di{
+  max-width: 50rem;
+}
+
+.obuchenie .di h3{
+  font-size: 6rem;
+  color: #ffffff;
+}
+.obuchenie .di span{
+  font-size: 3.5rem;
+  color:#dfe3ff;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+.obuchenie .di p{
+  font-size: 1.5rem;
+  color:rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.video-container{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.video-container video{
+  width: 100vw !important;
+  height: 100vh !important;
+}
+/* конец панели  */
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+.text123{
+  margin:0;
+  padding: 20px;;
+  color: #000000;
+  margin: 0 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 2; /* Увеличиваем расстояние между строками текста */
+}
+
+.text123 p{
+  text-align: center;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+/*  начало карточки */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.card {
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+	margin: 20px;
+	width: 700px;
+	height: 300px;
+	position: relative;
+  /* justify-content: center;
+  display: flex; */
+  
+}
+
+.card:hover {
+	transform: translateY(-5px);
+}
+
+.card-image {
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+	width: 100%;
+	height: 600px;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .3);
+}
+
+.card-title {
+	font-size: 20px;
+	margin: 0;
+	color: white;
+}
+
+.card-text {
+	color: white;
+	margin: 10px 0;
+}
+
+.card-link {
+	display: flex;
+}
+
+.sec1 {
+  display: flex;
+}
+/* конец карточки */
+.text111 h2{
+  background: rgb(62, 62, 70);
+  color: white;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+}
+.text111 p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* начало мини слайды */
+.wrapper {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 450px;
+  /* display: flex; */
+  flex-wrap: nowrap;
+  justify-content: start;
+  display: flex;
+}
+
+.card45 {
+  width: 100px;
+  border-radius: .75rem;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card45 > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card45 > .row > .icon {
+  background: #223;
+  color: white;
+  border-radius: 100%;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card45 > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100px;
+  width: 700px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description p {
+  color: #b0b0ba;
+  padding-top: 5px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card45[for="c1"] {
+  background-image: url('/styles/звезды\ \(1\).jpeg');
+}
+.card45[for="c2"] {
+  background-image: url('/styles/звезды\ \(1\).jpeg');
+}
+.card45[for="c3"] {
+  background-image: url('/styles/звезды\ \(1\).jpeg');
+}
+.card45[for="c4"] {
+  background-image: url('/styles/звезды\ \(1\).jpeg');
+}
+
+/* конец мини слайды */
+
+/* конец */
+
+/* .futor {
+  background-color: rgba(51, 51, 51, 0.7);
+  color: #fff; 
+  text-align: center; 
+  padding: 20px 0; 
+  position: fixed; 
+  bottom: 0; 
+  width: 100%; 
+} */
+
+
+footer{
+  background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swamp');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Poppins';
+    background-color: #f3fdf3;
+
+}
+
+.parallax3{
+    background:url('jasminlox.jpeg') center / cover;
+    height: 500px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position:relative;
+    color: #fffdfd;
+}
+.parallax3 h1{
+    color:#ffffff;
+    font-size:70px;
+}
+.parallax3 .mask{
+    position:absolute;
+    top:0;
+    left:0;
+    height:500px;
+    width:1500px;
+    z-index:2;
+}
+.parallax3-content{
+    z-index:4;
+}
+.page3-content{
+    height:400px;
+    margin:60px 100px;
+
+}
+
+.page3-content h2{
+    text-align:center;
+    font-size: 40px;
+    margin:60px 100px;
+
+}
+.page3-content p{
+    font-size:30px;
+    color:black;
+    margin:60px 100px;
+    
+}
+table{
+    font-family: sans-serif;
+    text-align:center;
+    border-collapse: separate;
+    border-spacing: 8px;
+    text-align: justify;
+    background:#ece9e0;
+    color:#656665;
+    margin: 0 auto;
+    border:16px solid #ece9e0;
+    border-radius: 16px;
+}
+th{
+    font-size:18px;
+    padding:10px;
+}
+td{
+    background:#f5d7bf;
+    padding:10px;
+
+}
+.page3-content h1{
+    height:20px;
+    text-align:center;
+}
+.alkan-container{
+    text-align:center;
+    padding:10px;
+}
+.alkan-container p{
+    font-size:30px;
+}
+.chemistry-container h1{
+    text-align:center;
+    
+}
+.chemistry-container p{
+    font-size:30px;
+}
+.chemistry-container h2{
+    font-size:30px;
+    text-align:center;
+    padding:10px;                       
+}
+.begai-container{
+    text-align:center;
+    padding:10px;
+}
+.begai-container p{
+    font-size:30px;
+    padding:10px;
+}
+.begai-container h1{
+    padding:10px;
+}
+.image-container{
+    width:600px;
+    height:300px;
+    background-image: url(images.png);
+    background-position: center;
+    text-align: center;
+    margin-left: 350px;
+    margin-top:10px;
+}
+
+.galogenirovane-container h1{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h2{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h3{
+    text-align:center;
+    font-size:30px;
+}
+.galogenirovane-container h4{
+    text-align:center;
+    font-size:30px;
+    margin-top:10px;
+}
+.galogenirovane-container {
+    font-size:30px;
+    margin:10px;
+}
+.dega-container{
+    width: 300px;
+    height:300px;
+    background-image: url(gidrirovanue.jpg);
+    background-position: center;
+    margin-left: 500px;
+    font-size:100px;
+    
+    /* width:150%;
+    height:150%; */
+}
+
+
+.rec-container h1{
+    text-align:center;
+}
+.altynai-container h1{
+    text-align:center;
+    margin:20px;
+}
+.altynai-container p{
+    margin:20px;
+    font-size:30px;
+}
+.zame-container{
+    text-align:center;
+}
+.zame-container p{
+    font-size:30px;
+}
+.izo-container h1{
+    text-align: center;
+    padding:20px;
+}
+.izo-container p{
+    font-size:30px;
+}
+.emalol-container{
+    background-image:url(izomer.jpg);
+    background-position: center;
+    margin-left: 500px;
+    font-size:100px;
+}
+.back{
+  position: relative;
+  width:100%;
+  height: 100000%;
+  overflow:hidden;
+  z-index: 1000000;
+}
+.bubbles{
+  position: relative;
+  display:flex;
+  z-index:100000;
+}
+.bubbles span{
+  position:relative;
+  width:30px;
+  height:30px;
+  background-color:#4fc3dc;
+  margin:0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s /var(--i));
+}
+.bubbles span:nth-child(even){
+  background-color: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+
+}
+@keyframes animate{
+  0%{
+      transform:translateY(100vh) scale(0);
+  }
+  100%{
+      transform:translateY(-10vh) scale(1);
+  }
+}
